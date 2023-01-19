@@ -2,11 +2,8 @@
 body{
     font-family: "Inter";
     font-weight: 400;
-
     max-width: 1280px;
-
     background-color: #ffffff;
-
     margin: 0 auto; 
 }
 
@@ -14,16 +11,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 50px 80px;
 }
 
 
 .island{
     max-width: 850px;
-
     background-color: #99b6ab;
-
     margin: 10px auto; 
 }
 
@@ -31,9 +25,7 @@ header{
 {
     display: flex;
     justify-content: space-evenly;
-
     width: 300px;
-
     margin: 0 auto;
 }
 
@@ -62,7 +54,6 @@ header{
 #bg{
     width: 850px;
     height: 225px;
-
     background-color: #9D9D9D;
 }
 
