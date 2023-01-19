@@ -1,7 +1,6 @@
 
-body
-{
-    font-family: Manrope;
+body{
+    font-family: "Inter";
     font-weight: 400;
 
     max-width: 1280px;
@@ -11,8 +10,7 @@ body
     margin: 0 auto; 
 }
 
-header
-{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,8 +19,7 @@ header
 }
 
 
-.island
-{
+.island{
     max-width: 850px;
 
     background-color: #99b6ab;
@@ -40,183 +37,134 @@ header
     margin: 0 auto;
 }
 
-.menu a
-{
+.menu a{
     text-decoration: none;
-    
     color: #282828;
 }
 
   
-.menu a:hover 
-{
+.menu a:hover {
     color: #655d5d;
     text-decoration: underline;
 }
 
 
-#profile
-{
+#profile{
     height: 250px;
     width: 400px;
-
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-
     margin-bottom: 25px;
 }
 
-#bg
-{
+#bg{
     width: 850px;
     height: 225px;
 
     background-color: #9D9D9D;
 }
 
-.user_name
-{
+.user_name{
     font-size: 60px;
-
     color: #ffffff;
 }
 
-.id
-{
+.id{
     font-size: 30px;
-
     color: #ffffff;
 }
 
-#back
-{
+#back{
     font-size: 40px;
     text-decoration: none;
-    
     color: #282828;
-
     padding: 12px 16px;
-
     transition: all 0.5s;
 }
 
   
-#back:hover 
-{
+#back:hover {
     color: #655d5d;
     text-decoration: underline;
 }
 
-#account
-{
+#account{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     height: 90px;
-
     max-width: 990px;
-
     font-size: 35px;
-
     color: #282828;
     background-color: #ffffff;
-
 }
 
-#account a
-{
+#account a{
     font-size: 30px;
 }
 
-.info
-{
+.info{
     font-size: 30px;
 }
 
-.account_name
-{
+.account_name{
     font-size: 35px;
-
     margin-right: 10px;
-
     color: #121212;
 }
 
-.account_id
-{
+.account_id{
     font-size: 35px;
-
     color: #121212;
 }
 
 
-#button
-{
+#button{
     text-decoration: none;
-
     color: #282828;
-
     margin: auto 15px;
 }
 
-#button:hover
-{
+#button:hover{
     color: #655d5d;
     text-decoration: underline;
 }
 
-#create
-{
+#create{
     display: flex;
     text-align: center;
     justify-content: center;
-
     font-size: 30px;
-
     margin: 0 auto;
 }
 
-#create_island
-{
+#create_island{
     display: flex;
     justify-content: center;
-
     font-size: 35px;
-
     color: #282828;
     background-color: #ffffff;
-
     padding: 50px 50px;
 }
 
-#create_island #create_button 
-{
+#create_island #create_button {
     font-size: 30px;
-
     width: 400px;
     height: 50px;
-
     color: #282828;
     background-color: #ffffff;
-    
     border: none;
 }
 
-#create_island #create_button:hover
-{
+#create_island #create_button:hover{
    text-decoration: underline;
 }
 
-#create_island input
-{
+#create_island input{
     font-size: 35px;
-
     width: 400px;
     height: 75px;
-
     margin: 10px auto;
 }
