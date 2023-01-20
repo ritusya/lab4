@@ -1,0 +1,160 @@
+body {
+    width: 99%;
+    background-color: #dce8fc;
+    font-family: 'geneva';
+}
+/*   header.index
+====================*/
+.title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.list {
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
+    
+}
+
+
+/*   item.index
+=====================*/
+.goods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    width: 230px;
+    
+    margin: 5% 1.6%;
+    border: 1px solid;
+    background-color: #fff;
+    
+    
+}
+
+.card img {
+    width: 95%;
+    margin: 2%;
+}
+
+.card h1, h2 {
+    margin-left: 3%;
+    margin-top: 1%;
+    
+}
+
+h4 {
+    padding: 6px;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.main-page {
+    margin: 5px;
+    margin-bottom: 100px;
+    
+}
+
+/*   table.list
+=====================*/
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+table {
+    border: 2px dashed blue;
+    width: 65%;
+    margin-top: 10px;
+}
+
+form {
+    border: 2px dashed red;
+    width: 30%;
+    margin-left: 2.8%;
+    margin-top: 10px;
+}
+
+.tr-head {
+    text-align: center;
+    background-color: rgba(178, 188, 204, 0.89);
+}
+
+
+tr {
+    display: flex;
+    padding: .25em 0;
+}
+
+tr:not(:last-child){
+    border-bottom: 2px solid;
+}
+
+th{
+    font-size: 1.2em;
+    width: 50%;
+}
+
+th:not(:last-child){
+    border-right: 2px solid black;
+}
+
+td:not(:last-child){
+    border-right: 2px solid black;
+}
+
+td{
+    font-size: inherit;
+    color: black;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.td-edit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+td p {
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+
+/*    form.list
+========================*/
+
+form {
+    padding: 10px;
+}
+
+form p {
+    margin-bottom: 2px;
+}
+
+/* form.update
+=================*/
+
+.upd-box {
+/*    border: 1px dashed blue;*/
+    display: flex;
+    flex-direction: row;
+}
+.upd-box form {
+    border: none;
+}
+
+.upd-box img {
+    max-width: 50%;
+    vertical-align: middle;
+    margin: 20px;
+}
