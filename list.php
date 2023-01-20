@@ -2,9 +2,9 @@
   require_once 'connect.php';
   $goods = mysqli_query($connect, "SELECT * FROM `goods`");
   $goods = mysqli_fetch_all($goods);
-//  echo "<pre>";
-//  print_r($goods);
-//  echo "</pre>";
+  // echo "<pre>";
+  // print_r($goods);
+  // echo "</pre>";
 ?>
 
 <!DOCTYPE html>
@@ -17,30 +17,44 @@
   <title>online shop</title>
 </head>
 <body>
-   <h1 class="title"> Online shop</h1>
-   <div class="list">
-       <a class="list" href="list.php">show list of all items</a>
-   </div>
-    <div class="goods">
+  <a href="index.php" class="main-page">main page</a>
+   <div class="box">
+    <table class="table">
+        <tr class="tr-head">
+            <th class="t-id">id</th>
+            <th>name</th>
+            <th>description</th>
+            <th>price</th>
+            <th>image</th>
+            <th>edit</th>
+        </tr>
         <?php
-        foreach ($goods as $item) {
+          foreach ($goods as $item) {
+            echo '
+            <tr>
+                <td class="td-edit">'.$item[0].'</td>
+                <td class="td-edit">'.$item[1].'</td>
+                <td>'.$item[2].'</td>
+                <td class="td-edit">'.$item[3].'</td>
+                <td class="td-edit"><a href="'.$item[4].'">🖼️</a></td>
+                <td class="td-edit"><a href="update-form.php?id='. $item[0].'">&#9998</a><p>he</p><a href="delete.php?id='. $item[0].'">&#128465</a></td>
+            </tr>
+            ';
+          }
         ?>
-        
-        <div class="card">
-            <div class="item-image">
-                <img src="<?php echo $item[4] ?>" alt="">
-            </div>
-            <div class="item-info">
-                <h1><?php echo $item[1] ?></h1>
-                <h2>$<?php echo $item[3] ?></h2>
-            </div>
-            <h4><?php echo $item[2] ?></h4>
-            
-        </div>
-        <?php } ?>
-        
+    </table>
+    <form action="create.php" method="post">
+       <h2>Add new item</h2>
+        <p>Name</p>
+        <input type="text" name="title">
+        <p>Description</p>
+        <textarea name="description"></textarea>
+        <p>Price</p>
+        <input type="number" name="price">
+        <p>Image</p>
+        <input type="text" name="image"> 
+        <button type="submit">Add</button>
+    </form>
     </div>
-    
-    
 </body>
 </html>
